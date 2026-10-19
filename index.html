@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transit Rush — App Support &amp; Help Center</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --ink: #14213d;
+      --muted: #52607a;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --border: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #14213d 0%, #1d3557 100%);
+      color: #ffffff;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+    header .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      color: #ffd166;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 0 auto;
+      max-width: 560px;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1.05rem;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 10px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.24);
+    }
+    main {
+      max-width: 780px;
+      margin: -24px auto 48px;
+      padding: 0 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(20, 33, 61, 0.05);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: var(--ink);
+    }
+    .contact-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 10px;
+    }
+    .btn.secondary {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .faq-item {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      margin-top: 16px;
+    }
+    .faq-item:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .faq-item h3 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+    }
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 24px 20px 40px;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="badge">iOS &amp; iPadOS Support</div>
+    <h1>Transit Rush</h1>
+    <p>World Transit Puzzle — Official Support, FAQ &amp; Privacy Information</p>
+    <nav>
+      <a href="#support">Contact Support</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="support" class="card">
+      <h2>Contact Support</h2>
+      <p>
+        Need help with <strong>Transit Rush</strong>, encountered a bug, or have feedback about a city stop?
+        Reach out directly and we'll get back to you promptly.
+      </p>
+      <div class="contact-box">
+        <a class="btn" href="mailto:jmorton@gmail.com?subject=Transit%20Rush%20Support">Email: jmorton@gmail.com</a>
+        <a class="btn secondary" href="https://github.com/jlmorton/transit-rush-support/issues" target="_blank" rel="noopener">Report an Issue on GitHub</a>
+      </div>
+    </section>
+
+    <section id="faq" class="card">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How do I play Transit Rush?</h3>
+        <p>
+          Tap commuters who have an open path to the boarding curb so they can board the matching color bus.
+          If a commuter's color doesn't match the currently active bus, they wait in the holding dock until their bus arrives.
+          Be careful not to fill every dock slot without a match—that causes a gridlock!
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do special commuters and obstacles work?</h3>
+        <p>
+          As you travel through the World Transit Tour, you'll encounter <strong>Mystery (?) Commuters</strong> (whose color reveals when they reach the front),
+          <strong>Linked Twins</strong> (pairs that board together and need 2 free dock slots if waiting),
+          <strong>VIP Commuters</strong>, <strong>Tunnels</strong>, and <strong>Double-Decker Buses</strong>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do Coins, Hints, and Lives work?</h3>
+        <p>
+          Clearing city levels earns Coins. You can spend Coins in-game to unlock a temporary <strong>+1 Dock Slot</strong>,
+          request a solver <strong>Hint</strong>, or refill your <strong>Lives</strong>. Lives also regenerate automatically over time.
+          Transit Rush contains no real-money purchases or ads.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Where is my game progress saved?</h3>
+        <p>
+          All progress—including unlocked countries and cities, coins, and audio/haptic settings—is saved locally on your iPhone or iPad.
+          No account or internet connection is required to play.
+        </p>
+      </div>
+    </section>
+
+    <section id="privacy" class="card">
+      <h2>Privacy Policy Summary</h2>
+      <p>
+        <strong>Transit Rush does not collect, track, or share any personal data.</strong>
+        All game state and settings are stored strictly locally on your device. No third-party analytics, advertising SDKs, or external servers are used.
+      </p>
+      <p style="margin-bottom: 0;">
+        Read the full <a href="privacy.html" style="color: var(--accent); font-weight: 600;">Transit Rush Privacy Policy →</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 James Morton. All rights reserved. &middot;
+    <a href="index.html">Support</a> &middot;
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
